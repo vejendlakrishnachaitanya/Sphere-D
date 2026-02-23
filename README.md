@@ -4,8 +4,7 @@ Sphere-D is a modern, full-stack enterprise platform built to simplify and strea
 
 The platform is designed with automation, security, and scalability in mind, helping organizations improve operational efficiency and maintain accurate asset tracking.
 
-** Key Features**
-** Workspace Booking**
+**Key Features Workspace Booking**
 
 Live Availability Map
 Administrators can easily view which seats are free or occupied for any office area and date. This provides clear visibility into workspace usage and helps with planning and capacity management.
@@ -13,7 +12,7 @@ Administrators can easily view which seats are free or occupied for any office a
 Conflict-Free Booking
 Sphere-D uses database-level pessimistic locking to ensure that no two users can book the same seat at the same time, even during high traffic periods. This guarantees reliable and consistent booking behavior.
 
-** Asset & Inventory Management**
+**Asset & Inventory Management**
 
 Smart Request Validation
 Employees can request hardware such as laptops or monitors only if they have an active seat booking. This ensures that assets are allocated efficiently and only when needed.
@@ -28,7 +27,7 @@ This makes the fulfillment process transparent, organized, and easy to track.
 Hardware Maintenance and Replacement
 If a user reports an asset as broken, the system automatically updates its status and generates a replacement request for IT staff. This reduces manual effort and ensures faster issue resolution.
 
-** Administrative Control**
+**Administrative Control**
 
 Centralized User Management
 Administrators can create and manage employee, IT staff, and admin accounts from a single interface, ensuring proper access control across the system.
@@ -36,7 +35,7 @@ Administrators can create and manage employee, IT staff, and admin accounts from
 Flexible Capacity Configuration
 Office seating capacity can be configured and adjusted as needed, allowing the system to scale with organizational requirements.
 
-** Technical Architecture**
+**Technical Architecture**
 
 Sphere-D follows a modern client-server architecture, ensuring flexibility, maintainability, and scalability.
 
@@ -62,7 +61,8 @@ Exception Handling: Global exception handler for consistent and clear API respon
 
 Purpose: Handles business logic, security, and database interactions
 
-** Setup and Installation**
+**Setup and Installation**
+
 Prerequisites
 
 Make sure the following are installed:
@@ -92,6 +92,7 @@ mvn spring-boot:run
 The backend will run at:
 
 http://localhost:8080
+
 2. Frontend Setup
 
 Navigate to the frontend directory:
@@ -110,9 +111,9 @@ The frontend will run at:
 
 http://localhost:3000
 
-** Core Workflows**
+**Core Workflows**
 
-Employee Workflow
+**Employee Workflow**
 
 Book a Workspace Seat
 Employees can select a date and reserve an available seat.
@@ -123,7 +124,7 @@ Once a seat is booked, employees can request assets such as laptops or monitors.
 Manage Assigned Assets
 Users can view their assigned hardware and report issues if any asset becomes faulty.
 
-IT Staff Workflow
+**IT Staff Workflow**
 
 Monitor Request Queue
 IT staff can view all incoming asset requests waiting for approval.
@@ -131,7 +132,7 @@ IT staff can view all incoming asset requests waiting for approval.
 Approve and Assign Assets
 Once approved, assets are assigned to users and tracked within the system.
 
-Administrator Workflow
+**Administrator Workflow**
 
 Manage Users and Roles
 Administrators can create and manage system users and assign appropriate roles.
@@ -139,7 +140,7 @@ Administrators can create and manage system users and assign appropriate roles.
 Configure Inventory and Workspace
 Admins can add new hardware assets and configure seating capacity.
 
-** Security**
+**Security**
 
 Sphere-D uses a secure Role-Based Access Control (RBAC) system to protect resources and enforce permissions.
 
