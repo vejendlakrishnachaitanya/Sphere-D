@@ -17,7 +17,7 @@ public class JwtUtil {
 
     private static final String SECRET = "sphered_super_secure_secret_key_2026_application_security_key";
     private final Key key = Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
-    private static final long EXPIRATION = 1000 * 60 * 60 * 24 * 10;
+    private static final long EXPIRATION = 1000 * 60 * 60 * 24;
 
     public String generateToken(String username, String role) {
         return Jwts.builder()
